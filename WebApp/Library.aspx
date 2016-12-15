@@ -5,18 +5,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="Style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    
-
-    <a href="LoggedIn.aspx">Back to My Account</a>
-    <form id="form1" runat="server">
-        <asp:TextBox ID="searchTextBox" placeholder="Search for..." runat="server" />
-        <asp:Button ID="searchButton" Text="Search" runat="server" OnClick="searchEventMethod" /> 
-    <div>
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebLibLite</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a href="Default.aspx">Log out</a></li>
+        <li><a href="LoggedIn.aspx">My Account</a></li>
+        <li><a href="Account.aspx">My Books</a></li>
+        <li class="active"><a href="#">My Library</a></li>
+    </ul>
+ <div>
         
-               
+        <form id="form1" runat="server">
+            <div class="navbar-form navbar-left">
+                <asp:TextBox ID="searchTextBox" placeholder="Search for..." runat="server" />
+                <asp:Button ID="searchButton" Text="Search" runat="server" OnClick="searchEventMethod" /> 
+            </div>
+        
+        
     
         <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False"
             GridLines="None"
@@ -48,7 +60,13 @@
             <PagerStyle CssClass="pgr" />
         </asp:GridView>
     
+            </form>
     </div>
-    </form>
+    
+
+  </div>
+    </nav>
+
+    
 </body>
 </html>

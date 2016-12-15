@@ -6,6 +6,7 @@
 <head runat="server">
     <title>Logged In</title>
     <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="Style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -15,14 +16,10 @@
     </div>
     <ul class="nav navbar-nav">
         <li><a href="Default.aspx">Log out</a></li>
-        <li><a href="#">Contact</a></li>
         <li class="active"><a href="#">My Account</a></li>
         <li><a href="Account.aspx">My Books</a></li>
         <li><a href="Library.aspx">My Library</a></li>
     </ul>
-      <form id="form1" runat="server">
-        
-      </form>
 
   </div>
 </nav>
@@ -31,6 +28,35 @@
   <div class="jumbotron">
     <h1>My Account</h1>      
     <p>Feel free to search for books which we offer. From this panel you can also check your current repository</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="jumbotron">
+    <form id="form2" runat="server">
+        <div class="container" style="margin-top:50px">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Personal</h2>
+                    <asp:Label ID="Label11" runat="server" Text=""></asp:Label>  <br />       
+                    <asp:Label ID="Label12" runat="server" Text=""></asp:Label>  <br />
+                    <asp:Label ID="Label19" runat="server" Text=""></asp:Label>  <br />
+                </div>
+                <div class="col-md-4">
+                    <h2>Residence</h2>
+                    <asp:Label ID="Label13" runat="server" Text=""></asp:Label>  <br />
+                    <asp:Label ID="Label14" runat="server" Text=""></asp:Label>  <br />
+                    <asp:Label ID="Label15" runat="server" Text=""></asp:Label>  <br />
+                    <asp:Label ID="Label16" runat="server" Text=""></asp:Label>  <br />
+                </div>
+                <div class="col-md-4">
+                    <h2>Contact</h2>
+                    <asp:Label ID="Label17" runat="server" Text=""></asp:Label>  <br />
+                    <asp:Label ID="Label18" runat="server" Text=""></asp:Label>  <br />
+                </div>
+            </div>
+        </div>
+    </form>
   </div>
 </div>
 

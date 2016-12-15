@@ -45,6 +45,12 @@ namespace WebApp
                 }
             }
         }
+        //GridView2_PageIndexChanging
+        protected void GridView2_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            GridView1.PageIndex = e.NewPageIndex;
+            BindData();
+        }
 
         //protected void SqlDataSource2_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
         //{

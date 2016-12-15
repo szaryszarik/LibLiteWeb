@@ -32,4 +32,4 @@ C:\Users\Admin\documents\visual studio 2015\Projects\WebApp\WebApp\obj\Debug\Web
 C:\Users\Admin\documents\visual studio 2015\Projects\WebApp\WebApp\obj\Debug\WebApp.pdb
 C:\Users\Admin\documents\visual studio 2015\Projects\WebApp\WebApp\bin\MySql.Data.dll
 C:\Users\Admin\documents\visual studio 2015\Projects\WebApp\WebApp\bin\MySql.Data.xml
-C:\Users\Admin\Documents\Visual Studio 2015\Projects\WebApp\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+C:\Users\Admin\documents\visual studio 2015\Projects\WebApp\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache

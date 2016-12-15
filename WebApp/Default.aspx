@@ -7,6 +7,7 @@
     <title>Home</title> 
     <link href="css/bootstrap.css" rel="stylesheet" />
     <script src="js/bootstrap.min.js"></script>
+    <link href="Style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
    <!-- 
@@ -40,7 +41,6 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Contact</a></li>
     </ul>
   </div>
 </nav>
@@ -75,7 +75,11 @@
             <div class="col-sm-offset-2 col-sm-10">
               <asp:Button ID="submitButton" Text="Log in" runat="server" OnClick="submitEventMethod" /> 
             </div>
+             
         </div>
+
+        <asp:Label ID="lab" Text="" runat="server" ></asp:Label>
+       
    </form>
  </div>
 </body>
